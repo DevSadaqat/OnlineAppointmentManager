@@ -7,7 +7,8 @@ import ListAppointments from './ListAppointments';
 
 import {without} from 'lodash';
 
-class App extends Component {
+class App extends Component 
+{
   constructor() {
     super();
     this.state = {
@@ -19,7 +20,7 @@ class App extends Component {
     this.toggleForm = this.toggleForm.bind(this);
   }
 
-  //Event handler for adding component 
+  //Event handler for adding component easily 
   toggleForm() {
    this.setState({
      formDisplay: !this.state.formDisplay
