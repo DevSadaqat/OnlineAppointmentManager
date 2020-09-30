@@ -27,12 +27,12 @@ class App extends Component {
   }
 
   addAppointment(apt) {
-    let temApts = this.state.myAppointments;
+    let tempApts = this.state.myAppointments;
     apt.aptId = this.state.lastIndex;
-    temApts.unshift(apt);
+    tempApts.unshift(apt);
     this.setState({
-      myAppointments: temApts,
-      lastIndex: this.setState.lastIndex + 1 
+      myAppointments: tempApts,
+      lastIndex: this.state.lastIndex + 1
     });
   }
 

@@ -16,25 +16,26 @@ class AddAppointments extends Component{
     }
 //method for adding data of form 
 handleAdd(e) {
-    e.preventDefualt();
+    e.preventDefault();
     let tempApt = {
-        petName: this.state.petName,
-        ownerName: this.state.ownerName,
-        aptDate: this.state.aptDate + ' ' + this.state.aptTime,
-        aptNotes: this.state.aptNotes
+      petName: this.state.petName,
+      ownerName: this.state.ownerName,
+      aptDate: this.state.aptDate + ' ' + this.state.aptTime,
+      aptNotes: this.state.aptNotes
     };
+
     this.props.addAppointment(tempApt);
 
     this.setState({
-        petName: '',
-        ownerName: '',
-        aptDate: '',
-        aptTime: '',
-        aptNotes: '' 
+      petName: '',
+      ownerName: '',
+      aptDate: '',
+      aptTime: '',
+      aptNotes: ''
     });
-    this.props.toggleForm();
-}
 
+    this.props.toggleForm();
+  }
 
  //method to handle the change in input fields 
  handleChange(e) {
@@ -63,8 +64,7 @@ handleAdd(e) {
             
     
             <div className="card-body">
-              <form id="aptForm" noValidate
-              onSubmit={this.handleAdd}>
+            <form id="aptForm" noValidate onSubmit={this.handleAdd}>
                 <div className="form-group form-row">
                   <label
                     className="col-md-2 col-form-label text-md-right"
