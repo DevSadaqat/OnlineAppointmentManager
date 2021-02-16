@@ -1,3 +1,8 @@
+
+
+This project is based on React Framework, CRUD application that allows users to book appointment for their pet dogs and also view those appointmnets. 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
